@@ -1,0 +1,6 @@
+.project
+.texlipse
+*.aux
+*.log
+*.out
+tmp/
