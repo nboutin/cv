@@ -7,3 +7,6 @@ sudo apt install texlive-full
 ```
 sudo apt-get install texmaker
 ```
+
+# External links
+* https://lataix-sebastien.developpez.com/tutoriels/latex/tutoriel-moderncv/
