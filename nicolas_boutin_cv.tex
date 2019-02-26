@@ -2,16 +2,19 @@
 
 \documentclass[11pt, a4paper, sans]{moderncv}
 
-\moderncvstyle{casual}
-\moderncvcolor{black}
+\moderncvtheme[blue]{classic} % blue, orange, green, red, purple, grey, black / classic, casual, oldstyle, banking
+%\moderncvstyle{casual}
+%\moderncvcolor{black}
 \setlength{\hintscolumnwidth}{2cm} % date column width
 
 \usepackage[utf8]{inputenc}% encodage, à modifier selon vos habitudes
 \usepackage[frenchb]{babel}% pour un document en français.
 \usepackage[scale=0.8]{geometry}% pour régler les marges du CV les options habituelles de l'extension geometry peuvent s'appliquer ici
+%\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
 
 \name{Nicolas}{Boutin}
-\title{26/04/1986, 32ans}
+%\title{26/04/1986, 32ans}
+\title{Ingénieur logiciel embarqué}
 \address{4 rue du chausseur}{86110 Amberre}
 \phone[mobile]{06~79~37~39~00}
 \email{boutwork@gmail.com}
@@ -20,19 +23,21 @@
 %\social[twitter]{pierre.durand}
 %\social[github]{pierre.durand}
 %\extrainfo{informations complémentaires.}
-%\quote{Encore un titre}
-%\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname
+\quote{Ingénieur logiciel embarqué}
+%\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
 
 % Document
 
 \begin{document}
 
 \makecvtitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+%\vspace*{-2.5\baselineskip}
 
 \section{Compétences}
 
 \cvdoubleitem{Architecture, Conception et Développement logiciel}{}{Test / Intégration}{Jenkins, Catch2, Google Test}
-\cvdoubleitem{Programmation/Modélisation}{C99, C++03/11/14/17, CMake, Python, Perl, Bash, UML, Design pattern}{Management}{Pilotage d'équipe, Cycle en V}
+\cvdoubleitem{Programmation/Modélisation}{C99, C++03/11/14/17, CMake, \newline Python, Perl, Bash, UML, Design pattern}{Management}{Pilotage d'équipe, Cycle en V}
 \cvdoubleitem{Système embarqué}{STM32, ARM M3-M4, FreeRTOS, RL-RTX, Bootloader, UART, SPI, I2C, RTC, PWM, Segger emWin, emFile, emUSB}
 	{Logiciel/IDE}{Git, Perforce, SVN, Eclipse, IAR, Keil uVision, STM32CubeMX, Bureautique, JIRA}
 \cvdoubleitem{Linux embarqué}{Yocto, bitbake, SystemV, IPC, DBus}{Anglais}{TOEIC 895}
@@ -42,6 +47,7 @@
 \section{Formation}
 
 %cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
+%\cventry{Avril 2012\\à Octobre 2012}{Administrateur systèmes}{Vesalis}{Clermont-Ferrand}{France}{}
 \cventry{2008--2011}{Diplôme Ingénieur Sciences Informatiques}{options Systèmes Embarqués}{Polytech'Nice-Sophia}{Sophia-Antipolis(06)}{}
 \cventry{2007--2008}{Diplôme BSc(Hons) Robotics (Bac+4)}{Université de Plymouth}{Angleterre}{}{}{}
 \cventry{2005--2007}{Diplôme Universitaire de Technologie}{DUT Génie Electrique et Informatique Industrielle}{Angers(49)}{}{}
