@@ -5,7 +5,6 @@ sudo apt install texlive-full
 
 # Todo
 * Mise en forme section Compétences
-* Ajouter nombres années expériences
 * Ajouter une photo ?
 
 # External links
