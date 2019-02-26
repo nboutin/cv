@@ -4,14 +4,24 @@
 
 \moderncvstyle{casual}
 \moderncvcolor{black}
+\setlength{\hintscolumnwidth}{2cm} % date column width
 
+\usepackage[utf8]{inputenc}% encodage, à modifier selon vos habitudes
 \usepackage[frenchb]{babel}% pour un document en français.
+\usepackage[scale=0.8]{geometry}% pour régler les marges du CV les options habituelles de l'extension geometry peuvent s'appliquer ici
 
 \name{Nicolas}{Boutin}
 \title{26/04/1986, 32ans}
 \address{4 rue du chausseur}{86110 Amberre}
 \phone[mobile]{06~79~37~39~00}
 \email{boutwork@gmail.com}
+%\homepage{www.pierredurand.com}
+%\social[linkedin]{pierre.durand}
+%\social[twitter]{pierre.durand}
+%\social[github]{pierre.durand}
+%\extrainfo{informations complémentaires.}
+%\quote{Encore un titre}
+%\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname
 
 % Document
 
@@ -24,8 +34,15 @@
 \section{Expériences professionnelles}
 
 \section{Formation}
-\cventry{2004--2005}{Baccalauréat Sciences et Techniques Industrielles (STI) Génie Electronique}{St-Julien-la-Baronnerie, Angers(49)}{}{}{}
+%cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
+\cventry{2008--2011}{Diplôme Ingénieur Sciences Informatiques}{options Systèmes Embarqués}{Polytech'Nice-Sophia}{Sophia-Antipolis(06)}{}
+\cventry{2007--2008}{Diplôme BSc(Hons) Robotics (Bac+4)}{Université de Plymouth}{Angleterre}{}{}{}
+\cventry{2005--2007}{Diplôme Universitaire de Technologie}{DUT Génie Electrique et Informatique Industrielle}{Angers(49)}{}{}
+\cventry{2004--2005}{Baccalauréat Sciences et Techniques Industrielles}{STI Génie Electronique}{St-Julien-la-Baronnerie}{Angers(49)}{}
 
 \section{Centres d'intérêts}
+\cvitem{Sports}{Trail/Course nature, Voile, Badminton}
+\cvitem{Lecture}{Actualités technologique, scientifiques, robotiques et spatiales}
+\cvitem{Robotique}{Coupe de France de robotique 2007, Ferté-Bernard. Commande moteurs (Asservissement position et vitesse)}
 
 \end{document}
