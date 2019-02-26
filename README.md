@@ -3,10 +3,10 @@
 sudo apt install texlive-full
 ```
 
-# Install Latex Editor
-```
-sudo apt-get install texmaker
-```
+# Todo
+* Mise en forme section Compétences
+* Ajouter nombres années expériences
+* Ajouter une photo ?
 
 # External links
 * https://ctan.org/pkg/moderncv
