@@ -3,6 +3,12 @@
 sudo apt install texlive-full
 ```
 
+# Generate
+```
+mkdir -p output
+pdflatex -output-directory=output <filename>.tex
+```
+
 # Todo
 * Ajouter une photo ?
 * Try with police size 11pt
