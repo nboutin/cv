@@ -1,0 +1,109 @@
+% Preamble
+
+\documentclass[10pt, a4paper, sans]{moderncv}
+
+\moderncvtheme[blue]{classic} % blue, orange, green, red, purple, grey, black / classic, casual, oldstyle, banking
+%\moderncvstyle{casual}
+%\moderncvcolor{black}
+
+% quotewidth, separatorcolumnwidth, maincolumnwidth, doublei-temmaincolumnwidth, listitemsymbolwidth, listdoubleitemmaincolumnwidth,
+\setlength{\hintscolumnwidth}{2.1cm} % date column width
+
+\usepackage[utf8]{inputenc}% encodage, à modifier selon vos habitudes
+\usepackage[frenchb]{babel}% pour un document en français.
+%\usepackage[scale=0.8]{geometry}% pour régler les marges du CV les options habituelles de l'extension geometry peuvent s'appliquer ici
+\usepackage[top=1.1cm, bottom=1.1cm, left=1cm, right=1cm]{geometry}
+\recomputelengths
+\nopagenumbers{} %suppress page numbering for CV longer than one page
+
+% Personal data
+
+\name{Nicolas}{Boutin}
+\title{Ingénieur logiciel embarqué\newline \large 8 années d'expériences}
+\address{4 rue du chausseur}{86110 Amberre}
+\phone[mobile]{06~79~37~39~00}
+\email{boutwork@gmail.com}
+%\homepage{www.pierredurand.com}
+%\social[linkedin]{pierre.durand}
+%\social[twitter]{pierre.durand}
+%\social[github]{pierre.durand}
+\extrainfo{26/04/1986, 32 ans}
+%\quote{Ingénieur logiciel embarqué}
+%\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
+
+% Document
+
+\begin{document}
+
+\makecvtitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+%\vspace*{-2.5\baselineskip}
+
+\section{Compétences}
+
+\cvline{Logiciel}{Architecture, Conception et Développement}
+\cvline{Programmation}{C99, C++03/11/14/17, CMake, Doxygen, GNU Debugger(GDB), Python, Perl, Bash}
+\cvline{Système embarqué}{STM32, ARM M3-M4, FreeRTOS, RL-RTX, Bootloader, UART, SPI, I2C, RTC, PWM, Segger emWin, emFile, emUSB}
+\cvline{Linux embarqué}{User-Space, Yocto, bitbake, SystemV, IPC, DBus, CommonAPI, sqlite3}
+\cvline{Test-Intégration}{Jenkins, Catch2, Google Test, Parasoft, Cppcheck, Travis CI}
+\cvline{Modélisation}{UML, Design pattern}
+\cvline{Management}{Pilotage d'équipe, Cycle en V}
+\cvline{Logiciel/IDE}{Git, Perforce, SVN, Eclipse, IAR, Keil uVision, STM32CubeMX, JIRA, Bureautique, LaTeX}
+\cvline{Anglais}{TOEIC 895}{}{}
+
+\section{Expériences professionnelles}
+
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
+%cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
+
+% Mai 2017
+\cventry{2017--2019\newline2 ans}{Ingénieur logiciel linux embarqué}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
+	{Développement et portage applications C++ de monitoring et de services OS}
+	{C++14, Linux User-Space, Yocto, Bitbake, CMake, DLT logs, IPC DBUS, GDB, Eclipse}
+	
+% Oct 2016 - Janv 2017
+\cventry{2016--2017\newline4 mois}{Ingénieur intégrateur}{Apside Rennes pour Faiveley}{Tours(37)}
+	{Mise en place de l’intégration continue}
+	{Ubuntu14.04, Jenkins, SVN, Script Shell, Makefile, Perl}
+
+% Oct 2015 - Juil 2016
+\cventry{2015--2016\newline10 mois}{Architecte logiciel embarqué temps réel}{Apside Rennes pour Canberra}{Loches(37)}
+	{Définition et implémentation de l’architecture logiciel pour contaminamètre de chantier. Pilotage développement logiciel équipe 3 ingénieurs}
+	{C99/C++03, FreeRTOS, STM32L4, STM32CubeMX, IAR, Eclipse, SVN, Segger emWin, emFile, emUSB}
+
+% Janv 2015 - Sept 2015
+\cventry{2015--2015\newline9 mois}{Responsable logiciel embarqué du projet Linky G1 Triphasé}{Itron}{Poitiers(86)}
+	{Pilotage développement logiciel et management d’équipe, 3 ingénieurs. Report d’activité et avancement au chef de projet}
+	{Conception et développement. Mise en place de test d’intégration. Support technique}
+
+% Oct 2011 - Dec 2014
+\cventry{2011--2014\newline3 ans}{Ingénieur logiciel embarqué temps réel}{Itron}{Poitiers(86)}
+	{Conception et développement de fonctionnalités pour compteur électrique Linky}
+	{C++03, STM32, RTOS RL-RTX, Eclipse, Keil uVision, Perforce}
+
+% Sept 2010 - Sept 2011
+\cventry{2010--2011}{Apprenti par alternance}{ST-Ericsson}{Sophia-Antipolis (06)}
+	{Conception et développement d’un système de diagnostique matériel pour ARM9 embarqué dans les téléphones}
+	{C99/C++03, Trace32, Lauterbach, Eclipse, QT 4}
+
+\section{Formations}
+
+\cventry{2008--2011}{Diplôme Ingénieur Sciences Informatiques}{Polytech'Nice-Sophia}{Sophia-Antipolis(06)}{options Systèmes Embarqués}{}
+\cventry{2007--2008}{Diplôme BSc(Hons) Robotics (Bac+4)}{Université de Plymouth}{Angleterre}{}{}
+\cventry{2005--2007}{Diplôme DUT Génie Electrique et Informatique Industrielle}{Université Angers}{Angers(49)}{}{}
+\cventry{2004--2005}{Baccalauréat STI Génie Electronique}{St-Julien-la-Baronnerie}{Angers(49)}{}{}
+
+\section{Centres d'intérêts}
+
+\cvitem{Sports}{Trail/Course nature, Voile, Badminton}
+\cvitem{Lecture}{Actualités technologique, scientifiques, robotiques et spatiales}
+\cvitem{Robotique}{Coupe de France de robotique 2007, Ferté-Bernard. Commande moteurs (Asservissement position et vitesse)}
+
+% Footnote at the end to add version
+\emptysection{}\closesection
+\vfill
+\begin{center}
+\textit{\small 2019.02-rc}
+\end{center}
+
+\end{document}

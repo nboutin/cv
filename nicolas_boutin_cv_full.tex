@@ -1,0 +1,158 @@
+% Preamble
+
+\documentclass[10pt, a4paper, sans]{moderncv}
+
+\moderncvtheme[blue]{classic} % blue, orange, green, red, purple, grey, black / classic, casual, oldstyle, banking
+%\moderncvstyle{casual}
+%\moderncvcolor{black}
+
+% quotewidth, separatorcolumnwidth, maincolumnwidth, doublei-temmaincolumnwidth, listitemsymbolwidth, listdoubleitemmaincolumnwidth,
+\setlength{\hintscolumnwidth}{2.1cm} % date column width
+
+\usepackage[utf8]{inputenc}% encodage, à modifier selon vos habitudes
+\usepackage[frenchb]{babel}% pour un document en français.
+%\usepackage[scale=0.8]{geometry}% pour régler les marges du CV les options habituelles de l'extension geometry peuvent s'appliquer ici
+\usepackage[top=1.1cm, bottom=1.1cm, left=1cm, right=1cm]{geometry}
+\recomputelengths
+\nopagenumbers{} %suppress page numbering for CV longer than one page
+
+% Personal data
+
+\name{Nicolas}{Boutin}
+\title{Ingénieur logiciel embarqué\newline \large 8 années d'expériences}
+\address{4 rue du chausseur}{86110 Amberre}
+\phone[mobile]{06~79~37~39~00}
+\email{boutwork@gmail.com}
+%\homepage{www.pierredurand.com}
+%\social[linkedin]{pierre.durand}
+%\social[twitter]{pierre.durand}
+%\social[github]{pierre.durand}
+\extrainfo{26/04/1986, 32 ans}
+%\quote{Ingénieur logiciel embarqué}
+%\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
+
+% Document
+
+\begin{document}
+
+\makecvtitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+%\vspace*{-2.5\baselineskip}
+
+\section{Expériences professionnelles}
+
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
+%cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
+
+% Mai 2017
+\cventry{2017--2019\newline2 ans}{Ingénieur logiciel linux embarqué}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
+	{Développement et portage applications C++ de monitoring et de services OS}
+	{C++14, Linux User-Space, Yocto, Bitbake, CMake, DLT logs, IPC DBUS, GDB, Eclipse}
+	
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Projet TBM2, Antenne intelligente, fonctionnalité Appel d’urgence, d'assistance, Anti vol, Wifi dans le véhicule via 4G,\ldots
+  \item Equipe Operating System Service (OS Service), 1 Domain Leader, 1 Architect, 6 Developper
+  \item Distribution linux SWI Legato avec fonctionnalité automobile intégré
+  \item Legato=open source Linux-based embedded platform designed to simplify connected IoT application
+  \item SWI Air Prime AR758x (Baseband MDM9x40, Cortex A7, 1.2GHz, 145M RAM,512M Flash)
+  \item Yocto 2.2.3, système de build linux, kernel 3.18, Bitbake (intégré à Yocto) séquenceur de tache pour le build
+  \item Linux User Space, GNU Debugger (GDB), Unix System V
+  \item DBUS, CommonAPI, DLT-Daemon (log), coredump handler, adb shell, fastboot (flashing)
+\end{itemize}}
+
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Scrum matinale quotidien en Anglais (Equipe Italienne)
+  \item NRE-Imicro-Server: Server entre communication inter-micro (SPI) et Dbus, Cheetah code génération, C++/ Dbus / CommonAPI
+  \item dlt-serial: Transfer data from UART to dlt-daemon
+  \item db-manager: C++ wrapper over sqlite3 + contrainte domaine
+  \item earlystarter: first process in user-space, get data from Vuc, mount partition, launch OSS application, start initd
+\end{itemize}
+}
+	
+% Oct 2016 - Janv 2017
+\cventry{2016--2017\newline4 mois}{Ingénieur intégrateur}{Apside Rennes pour Faiveley}{Tours(37)}
+	{Mise en place de l’intégration continue}
+	{Ubuntu14.04, Jenkins, SVN, Script Shell, Makefile, Perl}
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Ordinateur de bord pour train: Tachymètre, Gestion des caméras intérieur, Enregistreur de parcours, Boite noire
+\end{itemize}}
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Configuration du serveur Jenkins/Hudson
+  \item Compilation multi-projet: Plateforme HW x3 / Repo multi-projet « Générique » / Projet spécifique
+  \item Lancement du séquenceur de test et du pilotage du banc de Test, Pilotage d’alimentation, Connexion réseau
+\end{itemize}}
+
+% Oct 2015 - Juil 2016
+\cventry{2015--2016\newline10 mois}{Architecte logiciel embarqué temps réel}{Apside Rennes pour Canberra}{Loches(37)}
+	{Définition et implémentation de l’architecture logiciel pour contaminamètre de chantier. Pilotage développement logiciel équipe 3 ingénieurs}
+	{C99/C++03, FreeRTOS, STM32L4, STM32CubeMX, IAR, Eclipse, SVN, Segger emWin, emFile, emUSB}
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Contaminamètre de chantier: Appareil portatif, Avec écran LCD et 5 boutons, Mesure de radioactivité avec sonde interchangeable (alpha, beta, gamma)
+\end{itemize}}
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Rédaction document spécifications fonctionnelles
+  \item Rédaction document d’architectures logiciels, modélisation UML
+  \item Conception et développement de l’architecture logiciel du produit (Composant = modularité)
+  \item Conception et développement Bootloader: Fonction firmware update, Lecture clé USB (maitre), Transfert PC sur flash interne (esclave), Mécanisme de récupération sur échec de mise à jour
+  \item Implémentation du driver RTC
+  \item Implémentation wrapper C++ pour FreeRTOS
+  \item Développement interface graphique: Modèle Vue-Controller
+  \item Intégration stack logiciel Segger: emWin, emFile, emUSB
+\end{itemize}}
+
+% Janv 2015 - Sept 2015
+\cventry{2015--2015\newline9 mois}{Responsable logiciel embarqué du projet Linky G1 Triphasé}{Itron}{Poitiers(86)}
+	{Pilotage développement logiciel et management d’équipe, 3 ingénieurs. Report d’activité et avancement au chef de projet}
+	{Conception et développement. Mise en place de test d’intégration. Support technique}
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item 
+\end{itemize}}
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item 
+\end{itemize}}
+
+% Oct 2011 - Dec 2014
+\cventry{2011--2014\newline3 ans}{Ingénieur logiciel embarqué temps réel}{Itron}{Poitiers(86)}
+	{Conception et développement de fonctionnalités pour compteur électrique Linky}
+	{C++03, STM32, RTOS RL-RTX, Eclipse, Keil uVision, Perforce}
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item 
+\end{itemize}}
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item 
+\end{itemize}}
+
+% Sept 2010 - Sept 2011
+\cventry{2010--2011}{Apprenti par alternance}{ST-Ericsson}{Sophia-Antipolis (06)}
+	{Conception et développement d’un système de diagnostique matériel pour ARM9 embarqué dans les téléphones}
+	{C99/C++03, Trace32, Lauterbach, Eclipse, QT 4}
+%\closesection{}
+
+% Footnote at the end to add version
+\emptysection{}\closesection
+\vfill
+\begin{center}
+\textit{\small 2019.02-rc}
+\end{center}
+
+\end{document}
