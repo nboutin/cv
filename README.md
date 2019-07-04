@@ -10,9 +10,9 @@ pdflatex -output-directory=output <filename>.tex
 ```
 
 # Todo
-* Ajouter une photo ?
-* Try with police size 11pt
-* Generate first release version
+- [ ] Ajouter une photo ?
+- [ ] Try with police size 11pt
+- [x] Generate first release version
 
 # External links
 * https://ctan.org/pkg/moderncv
