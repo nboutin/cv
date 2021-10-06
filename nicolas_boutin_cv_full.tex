@@ -19,7 +19,7 @@
 % Personal data
 
 \name{Nicolas}{Boutin}
-\title{Ingénieur logiciel embarqué\newline \large 8 années d'expériences}
+\title{Ingénieur logiciel embarqué\newline \large 10 années d'expériences}
 \address{4 Rue du Chausseur}{86110 Amberre}
 \phone[mobile]{06~79~37~39~00}
 \email{boutwork@gmail.com}
@@ -27,7 +27,7 @@
 %\social[linkedin]{pierre.durand}
 %\social[twitter]{pierre.durand}
 %\social[github]{pierre.durand}
-\extrainfo{26/04/1986, 33 ans}
+\extrainfo{26/04/1986, 35 ans}
 %\quote{Ingénieur logiciel embarqué}
 %\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
 
@@ -43,6 +43,39 @@
 
 %\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
 %cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
+
+% Fevrier 2019
+% PMAM (LLD, dev, UT, IT)(DaVinci configurator)
+% Flashing (dev, test, bootloader, agent, ota_maker)
+% Bring up (MP)
+% IMIcro communication(maintenance)
+% Setup UT env, support tech to India
+% MAF (outil débarqué)
+\cventry{2019--2021\newline2 ans}{Ingénieur logiciel micro-controlleur}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
+	{Architecture, Développement et Tests composant logiciel embarqué en C. Architecture et Développement outils débarqués pour banc de test en Python}
+	{C99, Python3, Renesas MCAL (Microcontroller Abtraction Layer), Vector DaVinci configurator, MicroSAR OS}
+
+% AIDA Flashing
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Projet AIDA, produit infocluster, tableau de bord et info-multmédia dans la voiture (Stellantis, P308, DS3)
+  \item Equipe OSS, 1 Domain leader, 2 Architect, 4 developpeurs
+  \item Vuc (Vehicule Controler) Microcontroleur RH850, Renesas MCAL Vector MicroSAR OS
+  \item SoC (System on Chip) Qualcomm SA8150 (8coeur), Hypervisor GHS (Green Hills), Guest Linux ou Android
+\end{itemize}}
+
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Flashing du Vuc depuis le SOC (communication intermicro SPI)
+  \item 3 partitions à mettre à jour (Bootloader secure, Agent, Application) et 3 scénario (Update, upgrade, migration)
+  \item Developpement Secureboot, selection de partition, controle d'intégrité des partitions
+  \item Developpement partition Agent/Updater, mise à jour de la partition application ou agent(updater)
+  \item Developpement composant Enabler (Application), démarrage de la séquence de flashing, request reboot to agent
+  \item Type de package Header(partition dest, size, signé et/ou crypté)
+  \item outils débarqué pour signer, crypter, fill blank, convert from hex to bin, ...
+\end{itemize}}
 
 % Mai 2017
 \cventry{2017--2019\newline2 ans}{Ingénieur logiciel linux embarqué}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
@@ -210,7 +243,7 @@
 \emptysection{}\closesection
 \vfill
 \begin{center}
-\textit{\small 2019.02-rc}
+\textit{\small 2021.10}
 \end{center}
 
 \end{document}
