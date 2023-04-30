@@ -19,15 +19,15 @@
 % Personal data
 
 \name{Nicolas}{Boutin}
-\title{Ingénieur logiciel embarqué\newline \large 8 années d'expériences}
-\address{4 rue du chausseur}{86110 Amberre}
+\title{Ingénieur logiciel embarqué\newline \large 10 années d'expériences}
+\address{4 Rue du Chausseur}{86110 Amberre}
 \phone[mobile]{06~79~37~39~00}
 \email{boutwork@gmail.com}
 %\homepage{www.pierredurand.com}
 %\social[linkedin]{pierre.durand}
 %\social[twitter]{pierre.durand}
 %\social[github]{pierre.durand}
-\extrainfo{26/04/1986, 32 ans}
+\extrainfo{26/04/1986, 35 ans}
 %\quote{Ingénieur logiciel embarqué}
 %\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
 
@@ -44,11 +44,45 @@
 %\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
 %cventry % on peut mettre ici de 3 à 6 arguments qui peuvent être laissés vides
 
+% Fevrier 2019
+% PMAM (LLD, dev, UT, IT)(DaVinci configurator)
+% Flashing (dev, test, bootloader, agent, ota_maker)
+% Bring up (MP)
+% IMIcro communication(maintenance)
+% Setup UT env, support tech to India
+% MAF (outil débarqué)
+\cventry{2019--2021\newline2 ans}{Ingénieur logiciel micro-controlleur}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
+	{Architecture, Développement et Tests composant logiciel embarqué en C. Architecture et Développement outils débarqués pour banc de test en Python}
+	{C99, Python3, Renesas MCAL (Microcontroller Abtraction Layer), Vector DaVinci configurator, MicroSAR OS}
+
+% AIDA Flashing
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Projet AIDA, produit infocluster, tableau de bord et info-multmédia dans la voiture (Stellantis, P308, DS3)
+  \item Equipe OSS, 1 Domain leader, 2 Architect, 4 developpeurs
+  \item Vuc (Vehicule Controler) Microcontroleur RH850, Renesas MCAL Vector MicroSAR OS
+  \item SoC (System on Chip) Qualcomm SA8150 (8coeur), Hypervisor GHS (Green Hills), Guest Linux ou Android
+\end{itemize}}
+
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Flashing du Vuc depuis le SOC (communication intermicro SPI)
+  \item 3 partitions à mettre à jour (Bootloader secure, Agent, Application) et 3 scénario (Update, upgrade, migration)
+  \item Developpement Secureboot, selection de partition, controle d'intégrité des partitions
+  \item Developpement partition Agent/Updater, mise à jour de la partition application ou agent(updater)
+  \item Developpement composant Enabler (Application), démarrage de la séquence de flashing, request reboot to agent
+  \item Type de package Header(partition dest, size, signé et/ou crypté)
+  \item outils débarqué pour signer, crypter, fill blank, convert from hex to bin, ...
+\end{itemize}}
+
 % Mai 2017
 \cventry{2017--2019\newline2 ans}{Ingénieur logiciel linux embarqué}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
 	{Développement et portage applications C++ de monitoring et de services OS}
 	{C++14, Linux User-Space, Yocto, Bitbake, CMake, DLT logs, IPC DBUS, GDB, Eclipse}
 	
+% TBM2 2017/05-2019-03
 \subsection{Contexte}
 \cvline{}{
 \begin{itemize}
@@ -66,12 +100,51 @@
 \cvline{}{
 \begin{itemize}
   \item Scrum matinale quotidien en Anglais (Equipe Italienne)
-  \item NRE-Imicro-Server: Server entre communication inter-micro (SPI) et Dbus, Cheetah code génération, C++/ Dbus / CommonAPI
+  \item NRE-Imicro-Server: Server de communication inter-micro (SPI) et Dbus, Cheetah code génération, C++/Dbus/CommonAPI
   \item dlt-serial: Transfer data from UART to dlt-daemon
   \item db-manager: C++ wrapper over sqlite3 + contrainte domaine
   \item earlystarter: first process in user-space, get data from Vuc, mount partition, launch OSS application, start initd
-\end{itemize}
-}
+\end{itemize}}
+
+% AIDA Flashing 2019/04-2019/11
+\subsection{Contexte}
+\cvline{}{
+\begin{itemize}
+  \item Projet AIDA, Fusion Tableau de bord et Infotainement(Multimédia)
+  \item Responsabilité OSS, Mettre à jour le Véhicule Controller via OTA
+  \item Perimetre, Lib SoC et composant logiciel Vuc (bootloader, Agent, Application)
+  \item 1 architect, 1 domain leader, 3 developper, 8 mois
+  \item µC Renesas RH850, langage C99, AUTOSAR, Green Hills Software (GHS) toolchain
+\end{itemize}}
+
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item Scrum matinale quotidien
+  \item Rapport d'activité hedbomadaire au Fonction Leader(chef équipe)
+  \item Développement et intégration de la fonction Flashing Vuc
+  \item Développement d'un framework de test d'intégration basé sur python unittest(2 personnes, 4 semaines)
+  \item Définition architecture, décomposition en tache, évaluation de la charge, attribution activité
+\end{itemize}}
+
+% AIDA PMAM 2019/12
+\subsection{Context}
+\cvline{}{
+\begin{itemize}
+  \item Projet AIDA R1, Fusion Tableau de bord et Infotainement(Multimédia)
+  \item Contrainte Safety, AsilA (ISO26262:2011 for Road Vehicle)
+  \item Règle MISRA Safety (Parasoft)
+\end{itemize}}
+
+\subsection{Activités}
+\cvline{}{
+\begin{itemize}
+  \item PMAM Post-Mortem Analysis Module
+  \item Ecriture document SwDD (Software Details Design)
+  \item Definition architecture (Enterprise Architect), Diagramme de classe, séquence,
+  \item Implémentation
+  \item Test Unitaire (Google Test)
+\end{itemize}}
 	
 % Oct 2016 - Janv 2017
 \cventry{2016--2017\newline4 mois}{Ingénieur intégrateur}{Apside Rennes pour Faiveley}{Tours(37)}
@@ -94,6 +167,7 @@
 \cventry{2015--2016\newline10 mois}{Architecte logiciel embarqué temps réel}{Apside Rennes pour Canberra}{Loches(37)}
 	{Définition et implémentation de l’architecture logiciel pour contaminamètre de chantier. Pilotage développement logiciel équipe 3 ingénieurs}
 	{C99/C++03, FreeRTOS, STM32L4, STM32CubeMX, IAR, Eclipse, SVN, Segger emWin, emFile, emUSB}
+	
 \subsection{Contexte}
 \cvline{}{
 \begin{itemize}
@@ -134,12 +208,18 @@
 \subsection{Contexte}
 \cvline{}{
 \begin{itemize}
-  \item 
+  \item Projet compteur électrique communicant Linky pour EDF
 \end{itemize}}
 \subsection{Activités}
 \cvline{}{
 \begin{itemize}
-  \item 
+  \item Composant Metering: Sauvegarde consommation par type de grandeur physique, Papp, Pactive, Preactive, ...
+  \item Composant Contacteur: Dev driver, pilotage des relais du contacteur, Organe de sécurité (surpuissance, surchauffe), 
+  anti-fraude (magnétique, injection de courant), commande à distance, commande utilisateur (bouton poussoir)
+  \item Composant Demand: ...
+  \item Test Intégration: Outils de script Itron (Manitoo)
+  \item RAM Monitor: Analyse de consommation RAM par tache RTOS
+  \item Support technique
 \end{itemize}}
 
 % Sept 2010 - Sept 2011
@@ -148,11 +228,22 @@
 	{C99/C++03, Trace32, Lauterbach, Eclipse, QT 4}
 %\closesection{}
 
+\section{Extra}
+\subsection{Objectif}
+\cvline{}{
+\begin{itemize}
+	\item Recherche opportunité d'évolution et obtenir plus de responsabilité
+	\item Être acteur dans la prise de décision, moteur dans l'entreprise
+	\item S'investir dans une entreprise pour du long terme
+	\item Quitter la prestation pour un client final
+\end{itemize}}
+\cvline{Design Pattern}{Singleton, state machine, observer, Interface, MVC}
+
 % Footnote at the end to add version
 \emptysection{}\closesection
 \vfill
 \begin{center}
-\textit{\small 2019.02-rc}
+\textit{\small 2021.10}
 \end{center}
 
 \end{document}
