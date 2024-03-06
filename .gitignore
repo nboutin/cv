@@ -1,9 +1,1 @@
-.project
-.texlipse
-*.aux
-*.log
-*.out
-tmp/
-*.synctex.gz
-*.~*
-./*.pdf
+output/

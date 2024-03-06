@@ -2,13 +2,15 @@
 
 ## How-To with Windows
 
-## Install MiKTeX
+### Install MiKTeX
 
 https://miktex.org/howto/install-miktex
 
+Allow on-the-fly package update
+
 ## How-To with Linux
 
-## Install Latex
+### Install Latex
 
 ```shell
 sudo apt install texlive-full
@@ -16,9 +18,10 @@ sudo apt install texlive-full
 
 ## Generate
 
-``` shell
-mkdir -p output
-pdflatex -output-directory=output <filename>.tex
+```console
+./gen.sh cv
+./gen.sh full
+./gen.sh all
 ```
 
 ## Todo
