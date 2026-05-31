@@ -2,6 +2,8 @@
 
 \documentclass[10pt, a4paper, sans]{moderncv}
 
+\usepackage{cv_fonctions} % for \anneesExperience and \monAge macros
+
 \moderncvtheme[blue]{classic} % blue, orange, green, red, purple, grey, black / classic, casual, oldstyle, banking
 %\moderncvstyle{casual}
 %\moderncvcolor{black}
@@ -19,7 +21,7 @@
 % Personal data
 
 \name{Nicolas}{Boutin}
-\title{Ingénieur logiciel embarqué\newline \large 10 années d'expériences}
+\title{Ingénieur logiciel embarqué\newline \large \anneesExperience\ ans d'expérience} % base date 2011/10
 \address{4 Rue du Chausseur}{86110 Amberre}
 \phone[mobile]{06~79~37~39~00}
 \email{boutwork@gmail.com}
@@ -27,7 +29,7 @@
 %\social[linkedin]{pierre.durand}
 %\social[twitter]{pierre.durand}
 %\social[github]{pierre.durand}
-\extrainfo{26/04/1986, 35 ans}
+\extrainfo{26/04/1986, \monAge\ ans}
 %\quote{Ingénieur logiciel embarqué}
 %\photo[64pt][0.4pt]{maphoto} % hauteur, épaisseur cadre, pathname (sans extension)
 
@@ -81,7 +83,7 @@
 \cventry{2017--2019\newline2 ans}{Ingénieur logiciel linux embarqué}{Groupe Creative Rennes pour Magneti Marelli}{Châtellerault(86)}
 	{Développement et portage applications C++ de monitoring et de services OS}
 	{C++14, Linux User-Space, Yocto, Bitbake, CMake, DLT logs, IPC DBUS, GDB, Eclipse}
-	
+
 % TBM2 2017/05-2019-03
 \subsection{Contexte}
 \cvline{}{
@@ -145,7 +147,7 @@
   \item Implémentation
   \item Test Unitaire (Google Test)
 \end{itemize}}
-	
+
 % Oct 2016 - Janv 2017
 \cventry{2016--2017\newline4 mois}{Ingénieur intégrateur}{Apside Rennes pour Faiveley}{Tours(37)}
 	{Mise en place de l’intégration continue}
@@ -167,7 +169,7 @@
 \cventry{2015--2016\newline10 mois}{Architecte logiciel embarqué temps réel}{Apside Rennes pour Canberra}{Loches(37)}
 	{Définition et implémentation de l’architecture logiciel pour contaminamètre de chantier. Pilotage développement logiciel équipe 3 ingénieurs}
 	{C99/C++03, FreeRTOS, STM32L4, STM32CubeMX, IAR, Eclipse, SVN, Segger emWin, emFile, emUSB}
-	
+
 \subsection{Contexte}
 \cvline{}{
 \begin{itemize}
@@ -193,12 +195,12 @@
 \subsection{Contexte}
 \cvline{}{
 \begin{itemize}
-  \item 
+  \item
 \end{itemize}}
 \subsection{Activités}
 \cvline{}{
 \begin{itemize}
-  \item 
+  \item
 \end{itemize}}
 
 % Oct 2011 - Dec 2014
@@ -214,7 +216,7 @@
 \cvline{}{
 \begin{itemize}
   \item Composant Metering: Sauvegarde consommation par type de grandeur physique, Papp, Pactive, Preactive, ...
-  \item Composant Contacteur: Dev driver, pilotage des relais du contacteur, Organe de sécurité (surpuissance, surchauffe), 
+  \item Composant Contacteur: Dev driver, pilotage des relais du contacteur, Organe de sécurité (surpuissance, surchauffe),
   anti-fraude (magnétique, injection de courant), commande à distance, commande utilisateur (bouton poussoir)
   \item Composant Demand: ...
   \item Test Intégration: Outils de script Itron (Manitoo)
@@ -243,7 +245,7 @@
 \emptysection{}\closesection
 \vfill
 \begin{center}
-\textit{\small 2021.10}
+\textit{\small \dateGeneration}
 \end{center}
 
 \end{document}

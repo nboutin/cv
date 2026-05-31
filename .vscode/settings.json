@@ -1,0 +1,32 @@
+{
+    // 1. Tell the extension where to look for the final PDF to display in the viewer
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
+
+    // 2. Configure the build tool (latexmk) with separate aux and out directories
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%WORKSPACE_FOLDER%/output",
+                "-auxdir=%WORKSPACE_FOLDER%/build",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+
+    // 3. Set the default recipe to use the tool configured above
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (Separate Build/Output)",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ]
+}

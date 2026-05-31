@@ -1,0 +1,31 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cv_fonctions}[2024/04/26 Package de calcul automatique d'age et d'experience]
+
+% --- Calcul automatique des années d'expérience (base : Octobre 2011) ---
+\newcounter{experience}
+\setcounter{experience}{\numexpr\year-2011\relax}
+\ifnum\month<10
+    \addtocounter{experience}{-1}
+\fi
+\newcommand{\anneesExperience}{\theexperience}
+
+% --- Calcul automatique de l'âge (base : 26 Avril 1986) ---
+\newcounter{age}
+\setcounter{age}{\numexpr\year-1986\relax}
+\ifnum\month<4
+    \addtocounter{age}{-1}
+\else
+    \ifnum\month=4
+        \ifnum\day<26
+            \addtocounter{age}{-1}
+        \fi
+    \fi
+\fi
+\newcommand{\monAge}{\theage}
+
+
+% --- Date de génération automatique (Format AAAA.MM) ---
+% Ajoute un "0" devant le mois s'il est strictement inférieur à 10
+\newcommand{\dateGeneration}{%
+    \the\year.\ifnum\month<10 0\fi\the\month%
+}
