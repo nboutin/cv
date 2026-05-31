@@ -8,6 +8,13 @@ https://miktex.org/howto/install-miktex
 
 Allow on-the-fly package update
 
+Open Miktex console, check for updates, then updates now
+
+### Install PERL for latex engine
+
+https://strawberryperl.com/
+Use msi installer
+
 ## How-To with Linux
 
 ### Install Latex
